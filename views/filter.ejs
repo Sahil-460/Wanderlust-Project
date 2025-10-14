@@ -1,0 +1,19 @@
+<%-layout("/layouts/boilerplate")%>
+<h1 style="text-align:center;color:mediumturquoise">Filtered listings you are interested in :</h1>
+ <div class="showlists" style="display:flex;flex-wrap:wrap">
+<%for(listing of listings){%>
+    <div class="col-2 ms-5 mt-4">
+<a href="http://localhost:8080/listings/<%=listing._id%>" style="text-decoration: none;">
+<div class="card" style="width: 18rem;">
+  <img src="<%=listing.image.url%>" class="card-img-top" alt="listing-image" style="height: 25rem;" >
+  <div class="card-img-overlay" style="opacity:0.2"></div>
+  <div class="card-body">
+    <p class="card-text"><b><%=listing.title%></b></p>
+    <p class="card-text">&#8377;<%=listing.price.toLocaleString("en-IN")%>/night</p>
+  </div>
+</div>
+</a>
+</div>
+<%}%>
+</div>
+
