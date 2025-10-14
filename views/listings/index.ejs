@@ -1,72 +1,72 @@
 <% layout('layouts/boilerplate') -%>
  <div id="filters">
-  <a href="http://localhost:8080/filters/trending" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+  <a href="/filters/trending" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2">
     <div class="filtericons"><i class="fa-solid fa-fire"></i></div>
     <h5>Trending</h5>
   </div>
   </a>
-   <a href="http://localhost:8080/filters/rooms" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+   <a href="/filters/rooms" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2">
     <div class="filtericons"><i class="fa-solid fa-bed"></i></div>
     <h5>Rooms</h5>
   </div>
    </a>
- <a href="http://localhost:8080/filters/iconiccities" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+ <a href="/filters/iconiccities" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2 iconiccities">
     <div class="filtericons"><i class="fa-solid fa-city"></i></div>
     <h5>Iconic cities</h5>
   </div>
   </a>
-  <a href="http://localhost:8080/filters/mountains" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+  <a href="/filters/mountains" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2">
     <div class="filtericons"><i class="fa-solid fa-mountain"></i></div>
     <h5>Mountains</h5>
   </div>
   </a>
-  <a href="http://localhost:8080/filters/cabins" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+  <a href="/filters/cabins" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2 cabins">
     <div class="filtericons"><i class="fa-solid fa-building"></i></div>
     <h5>Cabins</h5>
   </div>
   </a>
-  <a href="http://localhost:8080/filters/farms" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+  <a href="/filters/farms" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2 farms">
     <div class="filtericons"><i class="fa-solid fa-tractor"></i></div>
     <h5>Farms</h5>
   </div>
   </a>
-  <a href="http://localhost:8080/filters/beaches" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+  <a href="/filters/beaches" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2">
     <div class="filtericons"><i class="fa-solid fa-umbrella-beach"></i></div>
     <h5>Beaches</h5>
   </div>
   </a>
-    <a href="http://localhost:8080/filters/surfing" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+    <a href="/filters/surfing" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2">
     <div class="filtericons"><i class="fa-solid fa-water"></i></i></div>
     <h5>Surfing</h5>
   </div>
   </a>
-      <a href="http://localhost:8080/filters/amazingpools" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+      <a href="/filters/amazingpools" style="text-decoration: none;color:rgba(0,0,0,0.87)">
      <div class="filter mb-2">
     <div class="filtericons"><i class="fa-solid fa-person-swimming"></i></i></div>
     <h5>Amazing pools<h5>
   </div>
   </a>
-      <a href="http://localhost:8080/filters/boats" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+      <a href="/filters/boats" style="text-decoration: none;color:rgba(0,0,0,0.87)">
    <div class="filter mb-2">
     <div class="filtericons"><i class="fa-solid fa-ship"></i></div>
     <h5>Boats</h5>
   </div>
 </a>
-    <a href="http://localhost:8080/filters/arctic" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+    <a href="/filters/arctic" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2 arctic">
     <div class="filtericons"><i class="fa-solid fa-snowflake"></i></div>
     <h5>Arctic<h5>
   </div>
   </a>
-    <a href="http://localhost:8080/filters/camping" style="text-decoration: none;color:rgba(0,0,0,0.87)">
+    <a href="/filters/camping" style="text-decoration: none;color:rgba(0,0,0,0.87)">
   <div class="filter mb-2 camping">
     <div class="filtericons"><i class="fa-solid fa-campground"></i></div>
     <h5>Camping<h5>
@@ -78,7 +78,7 @@
   </div>
 <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-1">
 <%for(let listing of allListings){%>
-    <a href="http://localhost:8080/listings/<%=listing._id%>">
+    <a href="/listings/<%=listing._id%>">
     <div class="card col">
   <img src="<%= listing.image.url%>" class="card-img-top" alt="listing_image" style="height:20rem;">
   <div class="card-img-overlay"></div>

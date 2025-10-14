@@ -4,7 +4,7 @@
  <div class="showlists" style="display:flex;flex-wrap:wrap">
 <%for(listing of listings){%>
     <div class="col-2 ms-5 mt-4">
-<a href="http://localhost:8080/listings/<%=listing._id%>" style="text-decoration: none;">
+<a href="/listings/<%=listing._id%>" style="text-decoration: none;">
 <div class="card" style="width: 18rem;">
   <img src="<%=listing.image.url%>" class="card-img-top" alt="listing-image" style="height: 25rem;" >
   <div class="card-img-overlay" style="opacity:0.2"></div>

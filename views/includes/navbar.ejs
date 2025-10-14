@@ -1,26 +1,26 @@
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="http://localhost:8080/listings"><div class="web" style="display:flex;align-items:center"><i class="fa-brands fa-airbnb"></i><h5 style="display:inline-block;color:#fe424d;margin-top:0.5rem">Wanderlust</h5></div></a>
+    <a class="navbar-brand" href="/listings"><div class="web" style="display:flex;align-items:center"><i class="fa-brands fa-airbnb"></i><h5 style="display:inline-block;color:#fe424d;margin-top:0.5rem">Wanderlust</h5></div></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="http://localhost:8080/listings">Explore</a>
+        <a class="nav-link" href="/listings">Explore</a>
         </div>
         <div class="search ms-auto">
-         <form action="http://localhost:8080/searchlistings"class="d-flex" role="search" method="get">
+         <form action="/searchlistings"class="d-flex" role="search" method="get">
         <input class="form-control me-2" type="search" placeholder="Search destinations" aria-label="Search" name="searchcountry"/>
         <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;Search</button>
       </form>
         </div>
         <div class="navbar-nav ms-auto">
-            <a class="nav-link " href="http://localhost:8080/listings/new">Airbnb your home</a>
+            <a class="nav-link " href="/listings/new">Airbnb your home</a>
           <%if(!curruser){%>
-         <a class="nav-link " href="http://localhost:8080/signup"><b>Sign Up</b></a>
-        <a class="nav-link" href="http://localhost:8080/login"><b>Login</b></a>
+         <a class="nav-link " href="/signup"><b>Sign Up</b></a>
+        <a class="nav-link" href="/login"><b>Login</b></a>
         <%}else{%>
-        <a class="nav-link" href="http://localhost:8080/logout"><b>Log out</b></a>
+        <a class="nav-link" href="/logout"><b>Log out</b></a>
         <%}%>
       </div>
       </div>
