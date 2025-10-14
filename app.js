@@ -91,6 +91,10 @@ res.locals.curruser = req.user;
 next();
 })
 
+app.get("/",(req,res)=>[
+res.redirect("/listings")
+])
+
 app.get("/searchlistings",async(req,res)=>{
 let {searchcountry:Country} =req.query;
 const listings = await Listing.find({country:Country})
