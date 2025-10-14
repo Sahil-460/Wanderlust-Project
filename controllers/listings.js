@@ -35,7 +35,6 @@ res.redirect("/listings")}
 module.exports.showlistings = async(req,res)=>{
 let {id} = req.params;
 const listing = await Listing.findById(id).populate({path:"reviews",populate:{path:"author"}}).populate("owner")// nested populate
-req.flash("success","Listing is here");
 if(!listing){
   req.flash("error","Listing does not exists")
   return res.redirect("/listings")// we used return because function was executing further and express cannot send 2 responses returned a value to function
