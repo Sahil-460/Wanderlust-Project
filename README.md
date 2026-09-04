@@ -1,4 +1,4 @@
-# 🌍 Wanderlust — Full-Stack Airbnb Clone
+# 🌍 Wanderlust 
 
 A full-stack web application for listing and booking holiday rentals, built as my **first major full-stack project**. It features complete user authentication, dynamic database management, and interactive listings.
 
